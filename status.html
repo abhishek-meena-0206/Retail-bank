@@ -1,0 +1,61 @@
+
+<html>
+<style>
+	table{
+		 border-spacing: 15px;
+	}
+	h3{
+		color:red;
+	}
+	div{
+		font
+	}
+</style>
+
+
+
+
+<body>
+
+	<div align="center">
+
+		<table>
+       {% for i in name %}
+			<tr>
+
+				<td>
+                  {{ i[1]}}
+
+				</td>
+
+				<td>
+
+					{{i[0]}}
+
+				</td>
+				<td>
+					{{i[8]}}
+				</td>
+
+				<td>
+
+					<a href="{{i[0]}}">refresh</a>
+				</td>
+
+				<td>
+					{{i[9]}}
+				</td>
+				<td>
+					{{i[11]}}
+				</td>
+
+			</tr>
+
+        {% endfor %}
+		</table>
+
+	</div>
+
+
+</body>
+</html>

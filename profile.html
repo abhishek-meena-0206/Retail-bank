@@ -1,0 +1,41 @@
+
+<style>
+	table{
+		 border-spacing: 15px;
+	}
+	h3{
+		color:red;
+	}
+	div{
+		font
+	}
+</style>
+
+<body>
+
+	<table align ="center">
+		{% for i in p %}
+    	<tr><td>Customer SSN id:</td><td> {{i[0]}} </td>
+    	</tr><br/>
+    	<tr><td>Customer id:</td><td> {{i[1]}}</td>
+    	</tr>
+    	<tr>
+    	<td>Name:</td><td>  {{i[3]}}</td>
+    </tr>
+    <tr>
+    	<td>Address:</td><td>   {{i[4]}}</td>
+    </tr>
+    <tr>
+    	<td>Age:</td><td>  {{i[5]}}</td>
+    </tr>
+    <tr>
+    	<td>State:</td><td>  {{i[6]}}</td>
+    </tr>
+    <tr>
+    	<td>City:</td><td>  {{i[7]}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>

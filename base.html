@@ -1,0 +1,198 @@
+
+<style>
+
+
+.head{
+	
+	height:15%;
+	background-color: orange;
+}
+
+
+h1{
+    font-style: italic;
+	color: black;
+	font-weight: bold;
+
+}
+
+.base{
+	position: fixed;
+	top:15%;
+background-color: lightgrey;
+  height:70%;
+  width:100%;
+}
+
+
+.dropbtn {
+  background-color:orange;
+  color: black;
+  
+  padding: 1px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown{
+ position:absolute;
+top:70px;
+margin-left:40px;
+}
+
+
+.dropdown2{
+	position:absolute;
+	top:70px;
+	left:220px;
+}
+
+.dropdown3{
+	position:absolute;
+	top:70px;
+	left:405px;
+}
+.dropdown4{
+	position:absolute;
+	top:70px;
+	left:533px;
+}
+.dropdown5{
+	position:absolute;
+	top:70px;
+	left:693px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  
+  width:200px;
+  overflow: auto;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+ 
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show{
+
+	display:block;
+}
+
+</style>
+<body>
+	<div class="base">
+		<iframe height="100%" width="100%"  name="iframe_a"></iframe>
+</div>
+	
+<div class="head" id="i">
+
+<h1>Bank Of Abhishek</h1>
+
+<div class="dropdown" id="t">
+  <button onclick="myFunction()" class="dropbtn">Account Managment</button>
+  <div id="myDropdown" class="dropdown-content">
+   
+    <a href="create_account.html" target="iframe_a">create account</a>
+   
+  </div>
+
+  
+
+</div>
+<div  class="dropdown2" id="t">
+
+	<button onclick="myFunction1()" class="dropbtn">Customer Managment</button>
+  <div id="myDropdown1" class="dropdown-content">
+   
+    <a href="create.html" target="iframe_a">create customer</a>
+   
+  </div>
+
+	</div>
+<div  class="dropdown3" id="t">
+
+	<button onclick="myFunction2()" class="dropbtn">Status Details</button>
+  <div id="myDropdown2" class="dropdown-content">
+   
+    <a href="status.html" target="iframe_a">status</a>
+   
+  </div>
+
+	</div>
+
+	<div  class="dropdown4" id="t">
+
+	<button onclick="myFunction3()" class="dropbtn">Account Operation</button>
+  <div id="myDropdown3" class="dropdown-content">
+   
+    <a href="deposit.html" target="iframe_a">deposit</a>
+     <a href="transfer.html" target="iframe_a">transfer</a>
+   
+   
+  </div>
+
+	</div>
+	<div  class="dropdown5" id="t">
+
+	<button onclick="myFunction4()" class="dropbtn">Logout</button>
+  <div id="myDropdown4" class="dropdown-content">
+   
+    <a href="logout.html"   target="_top">logout</a>
+   
+  </div>
+
+	</div>
+
+
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}function myFunction4() {
+  document.getElementById("myDropdown4").classList.toggle("show");
+}function myFunction5() {
+  document.getElementById("myDropdown5").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+ 
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+   dropdowns.display="none"
+  }
+}
+
+</script>
+
+
+</body>
